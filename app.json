@@ -19,7 +19,7 @@
       "title" : "Web Addrress",
       "placeholder": "e.g. http://google.com",
       "description": "The full URL the Web Viewer should load.  Don't forget the 'http://' or 'https://'",
-      "verify" : "^(https?:\\/\\/)?([\\da-z\\.-]+)\\.([a-z\\.]{2,6})([\\/\\w \\.-]*)*\\/?$",
+      "verify" : "(\\b(https?|ftp|file):\\/\\/)?[-A-Za-z0-9+&@#/%?=~_|!:,.;]+[-A-Za-z0-9+&@#/%=~_|]",
       "required" : true,
       "position" : 0
     }],
