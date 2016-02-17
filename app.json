@@ -1,0 +1,41 @@
+{
+	"name" : "Web Viewer",
+	"author" : "Justin Furniss",
+	"description" : "Turn any webpage into an app that shows on your Propsboard!",
+    "longDescription" : "Great to load up just about anything on your TV.  Just provide the URL and you'll be off and running!",
+	"icon_128" : "img/icon_128.png",
+	"icon_512" : "img/icon_128.png",
+	"screenshots" : [ "img/ss1.png", "img/ss2.png"],
+	"video" : "https://www.youtube.com/embed/0nyje2npVE8",
+    "license" : "Creative Commons Zero",
+    "source" : "https://github.com/propsboard/props-client-js",
+	"version" : "1",
+	"allowedDomains" : [ "*.*" ],
+    "minDisplayInterval" : 60,
+    "params" : [{
+      "name" : "url",
+      "type" : "string",
+      "version" : "1",
+      "title" : "Web Addrress",
+      "placeholder": "e.g. http://google.com",
+      "description": "The full URL the Web Viewer should load.  Don't forget the 'http://' or 'https://'",
+      "verify" : "^(https?:\\/\\/)?([\\da-z\\.-]+)\\.([a-z\\.]{2,6})([\\/\\w \\.-]*)*\\/?$",
+      "required" : true,
+      "position" : 0
+    }],
+    "requests" : [],
+	"bundles" : [
+      {
+        "name" : "default",
+        "html" : "views/app.html",
+        "css" : "style/app.css",
+        "js" : "js/app.js",
+        "loadImage" : "img/loadimage.png",
+        "defaultPreroll": "img/preroll.gif",
+        "loadBackgroundColor" : "#4d6066"
+      }
+    ],
+    "images" : "img/",
+	"includes" : []
+
+}
