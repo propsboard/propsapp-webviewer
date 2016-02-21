@@ -8,6 +8,7 @@
 	"screenshots" : [ "img/ss1.png", "img/ss2.png"],
     "license" : "Creative Commons Zero",
     "source" : "https://github.com/propsboard/propsapp-webviewer",
+    "support" : "https://github.com/propsboard/propsapp-webviewer",
 	"version" : "1",
 	"allowedDomains" : [ "*.*" ],
     "minDisplayInterval" : 3600,
